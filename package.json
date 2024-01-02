@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "eslint . --ext js --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "mirror:get": "npm config get registry",
+    "mirror:set": "npm config set registry https://registry.npmmirror.com",
+    "mirror:rm": "npm config rm registry",
+    "backup": "git add . && git commit -m \"chore: backup\" && git push"
   },
   "dependencies": {
     "dat.gui": "^0.7.9",

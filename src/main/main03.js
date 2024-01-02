@@ -27,9 +27,6 @@ scene.add(camera);
 const textureLoader = new THREE.TextureLoader();
 const doorColorTexture = textureLoader.load("./textures/door/color.jpg");
 
-// console.log(doorColorTexture);
-// 
-
 // 添加物体
 const cubeGeometry = new THREE.BoxBufferGeometry(1, 1, 1);
 // 材质
