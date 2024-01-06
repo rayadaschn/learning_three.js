@@ -2,7 +2,7 @@ import * as THREE from "three";
 // 导入轨道控制器
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-// 目标：认识pointes
+// 目标：使用pointes设置随机顶点打造星河
 
 // 1、创建场景
 const scene = new THREE.Scene();
