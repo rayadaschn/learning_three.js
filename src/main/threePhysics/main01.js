@@ -84,11 +84,11 @@ const defaultContactMaterial = new CANNON.ContactMaterial(
   }
 );
 
-// 讲材料的关联设置添加的物理世界
+// 将材料的关联设置添加的物理世界
 cannonWorld.addContactMaterial(defaultContactMaterial);
 
 // 创建碰撞音效
-const hitSound = new Audio("/assets/audio/metalHit.mp3");
+const hitSound = new Audio("/assets/audio/metalHit.mp3"); // 浏览器需要激活, 才可以播放第一次声音
 // ---- 监听碰撞事件 -----
 const hitEnents = (e) => {
   // 获取碰撞强度
